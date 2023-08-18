@@ -4,7 +4,7 @@
         <groupId>org.jboss</groupId>
         <artifactId>jboss-parent</artifactId>
         <!--  Keep in sync with jboss-parent version in kie-user-bom-parent/pom.xml  -->
-        <version>40-SNAPSHOT</version>
+        <version>36</version>
     </parent>
     <groupId>org.kie</groupId>
     <artifactId>kie-parent</artifactId>
