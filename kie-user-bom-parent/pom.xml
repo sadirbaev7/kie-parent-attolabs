@@ -80,7 +80,7 @@
     <repository>
       <id>jboss-public-repository-group</id>
       <name>JBoss Public Repository Group</name>
-      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+      <url>https://maven.pkg.github.com/sadirbaev7/kie-parent-attolabs/</url>
       <releases>
         <enabled>true</enabled>
         <updatePolicy>never</updatePolicy>
@@ -109,7 +109,7 @@
     <pluginRepository>
       <id>jboss-public-repository-group</id>
       <name>JBoss Public Repository Group</name>
-      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+      <url>https://maven.pkg.github.com/sadirbaev7/kie-parent-attolabs/</url>
       <releases>
         <enabled>true</enabled>
       </releases>
