@@ -423,7 +423,7 @@
         <version.arquillian-cube>1.0.0.Alpha15</version.arquillian-cube>
         <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/
         </jboss.releases.repo.url>
-        <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/
+        <jboss.snapshots.repo.url>https://maven.pkg.github.com/sadirbaev7/kie-parent-attolabs
         </jboss.snapshots.repo.url>
 
         <!-- Latest release to be used by api-compatibility-check to check backwards compatibility of the Kie API. -->
