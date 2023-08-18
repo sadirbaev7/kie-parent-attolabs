@@ -13,6 +13,6 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Publish package
-        run: mvn --batch-mode deploy -s $GITHUB_WORKSPACE/settings.xml -DskipTests
+        run: mvn clean source:jar deploy -DuniqueVersion=false -Dmaven.source.useDefaultManifestFile=true -DdeplyAtEnd=true -Dmaven.source.includePom=true -Dmaven.install.skip=true
         env:
           GITHUB_TOKEN: ${{ secrets.KIE_PARENT_TOKEN }}
