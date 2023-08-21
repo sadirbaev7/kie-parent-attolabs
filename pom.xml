@@ -476,9 +476,8 @@
     </properties>
     <distributionManagement>
         <repository>
-          <id>github</id>
-          <name>GitHub Packages</name>
-          <url>https://maven.pkg.github.com/sadirbaev7/kie-parent-attolabs</url>
+            <id>jboss-snapshots-repository</id>
+            <url>https://maven.pkg.github.com/sadirbaev7/kie-parent-attolabs</url>
         </repository>
     </distributionManagement>
     <repositories>
