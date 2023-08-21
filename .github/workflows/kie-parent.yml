@@ -1,18 +1,22 @@
-name: Publish package to GitHub Packages
-on: push
+name: Maven Deploy
+on:
+  push:
+    branches:
+      - main
 jobs:
-  publish:
-    runs-on: ubuntu-latest 
-    permissions: 
-      contents: read
-      packages: write 
+  build:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-java@v3
-        with:
-          java-version: '11'
-          distribution: 'adopt'
-      - name: Publish package
-        run: mvn --batch-mode deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.KIE_PARENT_TOKEN }}
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Set up JDK 11
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'
+        distribution: 'adopt'
+        server-id: jboss-snapshots-repository
+        settings-path: ${{ github.workspace }}
+    - name: Deploy to GitHub Packages
+      run: mvn deploy
+      env:
+        GITHUB_TOKEN: ${{ secrets.KIE_PARENT_TOKEN }}
