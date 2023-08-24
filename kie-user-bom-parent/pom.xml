@@ -51,7 +51,7 @@
     <version.org.kie>${project.version}</version.org.kie>
     <version.org.kie.lienzo>${version.org.kie}</version.org.kie.lienzo>
     <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
-    <jboss.snapshots.repo.url>https://maven.pkg.github.com/sadirbaev7/kie-parent-attolabs/</jboss.snapshots.repo.url>
+    <jboss.snapshots.repo.url>https://nexusoss.albs.tech/repository/kie-parent/</jboss.snapshots.repo.url>
   </properties>
 
   <repositories>
@@ -80,7 +80,7 @@
     <repository>
       <id>jboss-public-repository-group</id>
       <name>JBoss Public Repository Group</name>
-      <url>https://maven.pkg.github.com/sadirbaev7/kie-parent-attolabs/</url>
+      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
       <releases>
         <enabled>true</enabled>
         <updatePolicy>never</updatePolicy>
@@ -109,7 +109,7 @@
     <pluginRepository>
       <id>jboss-public-repository-group</id>
       <name>JBoss Public Repository Group</name>
-      <url>https://maven.pkg.github.com/sadirbaev7/kie-parent-attolabs/</url>
+      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
       <releases>
         <enabled>true</enabled>
       </releases>

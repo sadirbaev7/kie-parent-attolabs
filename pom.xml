@@ -4,7 +4,7 @@
         <groupId>org.jboss</groupId>
         <artifactId>jboss-parent</artifactId>
         <!--  Keep in sync with jboss-parent version in kie-user-bom-parent/pom.xml  -->
-        <version>36</version>
+        <version>40-20230823.063900-1</version>
     </parent>
     <groupId>org.kie</groupId>
     <artifactId>kie-parent</artifactId>
@@ -423,8 +423,7 @@
         <version.arquillian-cube>1.0.0.Alpha15</version.arquillian-cube>
         <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/
         </jboss.releases.repo.url>
-        <jboss.snapshots.repo.url>https://maven.pkg.github.com/sadirbaev7/kie-parent-attolabs
-        </jboss.snapshots.repo.url>
+        <jboss.snapshots.repo.url>https://nexusoss.albs.tech/repository/kie-parent/</jboss.snapshots.repo.url>
 
         <!-- Latest release to be used by api-compatibility-check to check backwards compatibility of the Kie API. -->
         <revapi.oldKieVersion>7.67.0.Final</revapi.oldKieVersion>
@@ -475,10 +474,10 @@
         <version.lock-treatment-tool>^0.2.2</version.lock-treatment-tool>
     </properties>
     <distributionManagement>
-        <repository>
-            <id>jboss-snapshots-repository</id>
-            <url>https://maven.pkg.github.com/sadirbaev7/kie-parent-attolabs</url>
-        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <url>https://nexusoss.albs.tech/repository/kie-parent/</url>
+        </snapshotRepository>
     </distributionManagement>
     <repositories>
         <repository>
@@ -509,6 +508,10 @@
                 <enabled>true</enabled>
                 <updatePolicy>daily</updatePolicy>
             </snapshots>
+        </repository>
+        <repository>
+            <id>nexus-snapshots</id>
+            <url>https://nexusoss.albs.tech/repository/jboss-parent/</url>
         </repository>
     </repositories>
 

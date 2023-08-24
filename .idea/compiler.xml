@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="kie-build-tools" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jbpm-bom" target="1.8" />
+      <module name="kie-bom" target="1.8" />
+      <module name="kie-platform-bom" target="1.8" />
+      <module name="kie-pmml-bom" target="1.8" />
+      <module name="kie-soup-bom" target="1.8" />
+      <module name="kie-uberfire-extensions-bom" target="1.8" />
+      <module name="kie-user-bom-parent (1)" target="1.8" />
+      <module name="kie-user-bom-parent (2)" target="1.8" />
+      <module name="narayana-integration-bom" target="1.8" />
+      <module name="uberfire-bom" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="kie-build-tools" options="-Xlint:unchecked" />
+    </option>
+  </component>
+</project>
